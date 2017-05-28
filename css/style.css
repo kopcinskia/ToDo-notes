@@ -13,6 +13,34 @@ body {
     padding: 0;
 }
 
+.copyright {
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.copyright p {
+    font-size: 22px;
+    color: #aaa;
+    margin: 0;
+    padding: 5px;
+}
+
+.logo a{
+    top: 0px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.logo img {
+    padding-top: 7px;
+    padding-left: 14px;
+    width: 140px;
+}
+
 div.board {
     background-color: brown;
     width: 100%;
@@ -66,11 +94,16 @@ div.note button {
 
 div.note > textarea {
     height: 75%;
-    background: rgba(255, 255, 255, .5);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .glyphicon-plus {
     position: fixed;
-    top: 10px;
+    top: 50px;
     right: 10px;
+    width: 80px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px
 }

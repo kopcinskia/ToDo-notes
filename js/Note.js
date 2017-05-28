@@ -57,7 +57,6 @@ let Note = React.createClass({
         else {
             return this.renderDisplay()
         }
-     
     }
 })
 //definicja Tablicy
@@ -69,8 +68,7 @@ let Board = React.createClass({
             }
             if (props[propName] > 100) {
                 return new Error("Creating " + props[propName] + " notes is radicilus")
-            }
-            
+            }  
         }
     },
     //lista notatek startowych
@@ -79,7 +77,6 @@ let Board = React.createClass({
             notes:[]
         }
     },
-    //
     nextId: function() {
         this.uniqueId = this.uniqueId || 0
         return this.uniqueId++
@@ -133,20 +130,9 @@ let Board = React.createClass({
         return (<div className="board">
                     {this.state.notes.map(this.eachNote)}
                     <button className="btn btn-sm btn-success glyphicon glyphicon-plus"
-                        onClick={this.add.bind(null, "NEW NOTE")}/>
-            </div>
+                        onClick={this.add.bind(null, "NEW NOTE")}/></div>
         )
     }
 })
-React.render(<Board count={30}/>,
+React.render(<Board count={10}/>,
     document.getElementById('react-container'))
-
-
-
-
-
-
-
-
-
-
